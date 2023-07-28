@@ -55,15 +55,20 @@ export default function NavBar() {
                         </div>
                     </div>
                     <div className="w-1/6 hidden md:block">
-                        <div className="flex justify-around w-24 mx-auto">
+                        <div className="flex justify-between w-24 mx-auto">
                             <div>
-                                <a href="">
-                                    <img className="bg-white rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690513224/RewriteTheNarrative/Icon_Images_wwcmz7.png" alt="Facebook Logo" />
+                                <a href="https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d">
+                                    <img className="bg-white rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690513224/RewriteTheNarrative/Icon_Images_wwcmz7.png" alt="Facebook Logo" title="Facebook" />
                                 </a>
                             </div>
                             <div>
-                                <a href="">
-                                    <img className="bg-gray-200 rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690513678/RewriteTheNarrative/Icon_Images_2_jdxlrj.png" alt="Instagram Logo" />
+                                <a href="https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D">
+                                    <img className="bg-gray-200 rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690513678/RewriteTheNarrative/Icon_Images_2_jdxlrj.png" alt="Instagram Logo" title="Instagram" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.clubhouse.com/house/rewrite-the-narrative">
+                                    <img className="bg-gray-200 rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690572546/RewriteTheNarrative/clubhouseIcon_hdkraj.png" alt="Clubhouse.com Logo" title="Clubhouse" />
                                 </a>
                             </div>
                         </div>
