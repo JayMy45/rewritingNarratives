@@ -45,7 +45,7 @@ export default function NavBar() {
 
                         <div className="mx-3">
                             <Link href="/team" >
-                                <span className="hidden lg:inline">Meet the Team</span>
+                                <span className="hidden lg:inline">Dream Team</span>
                                 <span className="inline lg:hidden">Team</span>
                             </Link>
                         </div>

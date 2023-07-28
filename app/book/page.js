@@ -15,14 +15,20 @@ export default function BookPage() {
                             rel="noopener noreferrer"
                         >
                             <div>
-                                <h1 className="font-bold text-3xl">Available Books</h1>
+                                <h1 className="font-bold text-3xl">
+                                    Available Books
+                                </h1>
                             </div>
                         </Link>
                     </div>
-                    <div className="border-t-2 mb-5">
+                    <div className="border-t-2 mb-5 mx-10">
                         <div className="mx-10 mt-5">
                             <h1>
-                                <span className="text-3xl"><a href="https://www.amazon.com/stores/Oleda-Sinkler/author/B0C8BMK4YF?ref=ap_rdr&store_ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">Oleda Sinkler</a></span>
+                                <span className="text-3xl">
+                                    <a href="https://www.amazon.com/stores/Oleda-Sinkler/author/B0C8BMK4YF?ref=ap_rdr&store_ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">
+                                        Oleda Sinkler
+                                    </a>
+                                </span>
                             </h1>
                         </div>
                         <div className="flex flex-col space-y-3 md:space-y-10">
@@ -172,14 +178,18 @@ export default function BookPage() {
                     <div className="border-t-2 mb-10">
                         <div className="mx-10 mt-5">
                             <h1>
-                                <span className="text-3xl"><a href="https://www.amazon.com/dp/B0C7F76B6Y?ref_=cm_sw_r_apin_dp_MBQS5VKD48SDZV6J9C2G"> Ka’LaShae</a></span>
+                                <span className="text-3xl">
+                                    <a href="https://www.amazon.com/dp/B0C7F76B6Y?ref_=cm_sw_r_apin_dp_MBQS5VKD48SDZV6J9C2G">
+                                        Ka’LaShae
+                                    </a>
+                                </span>
                             </h1>
                         </div>
-                        <div className="flex flex-col space-y-3 md:space-y-10">
 
+                        <div className="flex flex-col space-y-3 md:space-y-10">
                             <div className="flex flex-col md:flex-row flex-wrap space-y-3 md:space-y-0 mt-10">
 
-                                {/* Rewrite the Narrative */}
+                                {/* The Other Side of Through...True Love */}
                                 <div className="w-fit overflow-hidden mx-auto">
                                     <div className="flex flex-col justify-between">
                                         <div className="">
@@ -218,7 +228,7 @@ export default function BookPage() {
 
                             <div className="flex flex-col md:flex-row flex-wrap space-y-3 md:space-y-0 mt-10">
 
-                                {/* Rewrite the Narrative */}
+                                {/* Anointed Prayers During */}
                                 <div className="w-fit overflow-hidden mx-auto">
                                     <div className="flex flex-col justify-between">
                                         <div className="">
