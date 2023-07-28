@@ -10,7 +10,7 @@ export default function TeamPage() {
                 <div className="text-center ">
                     <div className="mb-16">
                         <h1 className="underline text-3xl font-bold">
-                            The Team
+                            Dream Team
                         </h1>
                     </div>
 
