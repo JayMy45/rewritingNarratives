@@ -39,9 +39,9 @@ export default function NavBar() {
                             </Link>
                         </div> */}
 
-                        {/* <div className="mx-3">
+                        <div className="mx-3">
                             <Link href="/book" >Books</Link>
-                        </div> */}
+                        </div>
 
                         <div className="mx-3">
                             <Link href="/team" >

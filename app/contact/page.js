@@ -18,7 +18,7 @@ export default function ContactPage() {
                         <h1 className="text-gray-200 font-bold text-4xl md:text-6xl mt-6 md:mt-10">Contact Us</h1>
                     </div>
                     <div className="flex flex-col md:flex-row w-screen">
-                        <div className="w-full md:w-1/2 p-10 md:ml-12">
+                        <div className="w-full p-10">
                             <ContactForm />
                         </div>
 
