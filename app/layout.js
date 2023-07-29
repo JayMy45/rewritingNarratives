@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Niconne } from 'next/font/google'
+import { Inter, Niconne, Abril_Fatface } from 'next/font/google'
 import NavBar from './navbar'
 import Footer from './footer'
 
@@ -12,6 +12,13 @@ const niconne = Niconne({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-niconne',
+  display: 'swap',
+})
+
+const abril_fatface = Abril_Fatface({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-abril_fatface',
   display: 'swap',
 })
 
