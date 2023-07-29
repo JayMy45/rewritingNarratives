@@ -6,7 +6,7 @@ export default function BookPage() {
 
     return (
         <>
-            <section className="mb-10">
+            <section className="mt-10 md:mt-0 mb-10">
                 <div>
                     <div className="text-center mt-5 md:mt-10 mb-5 md:mb-10">
                         <Link
@@ -15,7 +15,7 @@ export default function BookPage() {
                             rel="noopener noreferrer"
                         >
                             <div>
-                                <h1 className="font-bold text-3xl">
+                                <h1 className="font-semibold text-2xl md:text-3xl">
                                     Available Books
                                 </h1>
                             </div>
@@ -45,7 +45,7 @@ export default function BookPage() {
                                             >
                                                 <Image
                                                     className=""
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690565059/RewriteTheNarrative/BookPics/rewriteBook_drdpea.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/Rewrite_The_Narrative_gwnwhn.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -67,7 +67,7 @@ export default function BookPage() {
                                             >
                                                 <Image
                                                     className="bg-gray-500"
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690564793/RewriteTheNarrative/BookPics/DumpingYourIdeas_frkfsr.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/DumpingIdeas_fq4ajn.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -91,7 +91,7 @@ export default function BookPage() {
                                             >
                                                 <Image
                                                     className="bg-gray-500"
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690565078/RewriteTheNarrative/BookPics/brokenHeart_q7wswe.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/HealingBrokenHearts_oi2owr.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -116,7 +116,7 @@ export default function BookPage() {
                                             >
                                                 <Image
                                                     className=""
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690565089/RewriteTheNarrative/BookPics/LetsGo_mbgknz.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/LetGo_r6cgni.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -138,7 +138,7 @@ export default function BookPage() {
                                             >
                                                 <Image
                                                     className=""
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690565115/RewriteTheNarrative/BookPics/Mountains_iac4jl.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/MountainMover_etkl9c.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -160,7 +160,7 @@ export default function BookPage() {
                                             >
                                                 <Image
                                                     className=""
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690565141/RewriteTheNarrative/BookPics/Unleased_doeonf.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/JealousUnleashed_o8ppx7.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -189,18 +189,18 @@ export default function BookPage() {
                         <div className="flex flex-col space-y-3 md:space-y-10">
                             <div className="flex flex-col md:flex-row flex-wrap space-y-3 md:space-y-0 mt-10">
 
-                                {/* The Other Side of Through...True Love */}
+                                {/* Anointed Prayers */}
                                 <div className="w-fit overflow-hidden mx-auto">
                                     <div className="flex flex-col justify-between">
                                         <div className="">
                                             <Link
-                                                href={"https://www.amazon.com/REWRITE-NARRATIVE-Oleda-Sinkler/dp/B0C7JCYKVN/?_encoding=UTF8&pd_rd_w=6Nkbe&content-id=amzn1.sym.ed85217c-14c9-4aa0-b248-e47393e2ce12&pf_rd_p=ed85217c-14c9-4aa0-b248-e47393e2ce12&pf_rd_r=145-6045852-0224312&pd_rd_wg=e33QA&pd_rd_r=cd590a9e-0763-4601-bbed-f8135b09d919&ref_=aufs_ap_sc_dsk"}
+                                                href={"https://www.amazon.com/dp/B0C7F76B6Y?ref_=cm_sw_r_apin_dp_MBQS5VKD48SDZV6J9C2G"}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
                                                 <Image
                                                     className=""
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690575901/RewriteTheNarrative/Anointed_Prayers_ohkbq5.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/AnointedPrayers_imkdyi.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
@@ -228,18 +228,18 @@ export default function BookPage() {
 
                             <div className="flex flex-col md:flex-row flex-wrap space-y-3 md:space-y-0 mt-10">
 
-                                {/* Anointed Prayers During */}
+                                {/* TrueLove */}
                                 <div className="w-fit overflow-hidden mx-auto">
                                     <div className="flex flex-col justify-between">
                                         <div className="">
                                             <Link
-                                                href={"https://www.amazon.com/Other-Side-Through-True-Love-ebook/dp/B0C9Z57KVQ?ref_=ast_author_mpb"}
+                                                href={""}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
                                                 <Image
                                                     className=""
-                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690576392/RewriteTheNarrative/TrueLove_clwbyi.jpg"}
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/TheOtherSide_fbiwoh.png"}
                                                     alt="Picture of Name"
                                                     width={200}
                                                     height={200}
