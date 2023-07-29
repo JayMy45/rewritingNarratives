@@ -92,7 +92,7 @@ export default function ContactForm() {
 
                     {/* message */}
                     <div className="w-full flex flex-col my-4">
-                        <label className="font-semibold" htmlFor="message text-gray-200">Send a Message</label>
+                        <label className="font-semibold text-white" htmlFor="message text-gray-200">Send an inquiry about a workshop here...</label>
                         <textarea
                             id="message"
                             className="p-2 text-black bg-gray-200 rounded-md md:w-11/12"
