@@ -6,7 +6,7 @@ export default function Home() {
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> */}
       {/* <div> */}
       <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-        <h1 className='home_welcome m-0 text-7xl text-orange-300'>Welcome</h1>
+        <h1 className='home_welcome m-0 text-7xl text-black dark:text-orange-300'>Welcome</h1>
       </div>
       {/* </div> */}
 

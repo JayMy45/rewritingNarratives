@@ -5,7 +5,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="h-34 mt-10 md:mt-1 md:mt-0">
+            <nav className="h-34 mt-10 md:mt-0 md:mt-0">
                 <div className="flex justify-between h-full items-center">
                     <div className="w-1/6 hidden md:block">
 
@@ -32,12 +32,12 @@ export default function NavBar() {
                             <Link href="/" >Home</Link>
                         </div>
 
-                        {/* <div className="mx-3">
+                        <div className="mx-3">
                             <Link href="/about" >
                                 <span className="hidden lg:inline">About Us</span>
                                 <span className="inline lg:hidden">About</span>
                             </Link>
-                        </div> */}
+                        </div>
 
                         <div className="mx-3">
                             <Link href="/book" >Books</Link>

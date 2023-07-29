@@ -5,7 +5,7 @@ export default function TeamPage() {
     return (
         <>
             {/* Team Container */}
-            <section className="mt-10 md:mt-5">
+            <section className="mt-10 md:mt-5 mb-10">
 
                 <div className="text-center ">
                     <div className="mb-16">
