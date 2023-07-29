@@ -5,7 +5,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="h-34 mt-10 md:mt-7 md:mt-0">
+            <nav className="h-34 mt-10 md:mt-1 md:mt-0">
                 <div className="flex justify-between h-full items-center">
                     <div className="w-1/6 hidden md:block">
 
