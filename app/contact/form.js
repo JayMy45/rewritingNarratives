@@ -92,7 +92,7 @@ export default function ContactForm() {
 
                     {/* message */}
                     <div className="w-full flex flex-col my-4">
-                        <label className="font-semibold text-white" htmlFor="message text-gray-200">Send an inquiry about a workshop here...</label>
+                        <label className="font-semibold text-white" htmlFor="message text-gray-200">Send an inquiry about a workshop</label>
                         <textarea
                             id="message"
                             className="p-2 text-black bg-gray-200 rounded-md md:w-11/12"
@@ -106,7 +106,7 @@ export default function ContactForm() {
                     <div>
                         <button
                             disabled={loading}
-                            className="bg-slate-500 px-2 py-2 w-24 rounded-lg font-medium disabled:bg:gray-400 disabled:text-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+                            className="bg-slate-500 px-2 py-2 w-24 rounded-lg font-medium hover:bg-blue-800 disabled:bg:gray-400 disabled:text-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
                             type="submit">
                             Submit
                         </button>

@@ -5,7 +5,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="h-34 mt-10 md:mt-0 md:mt-0">
+            <nav className="h-34 mt-10 md:mt-0 md:mt-0 bg-gray-800 dark:bg-transparent">
                 <div className="flex justify-between h-full items-center">
                     <div className="w-1/6 hidden md:block">
 
@@ -28,29 +28,29 @@ export default function NavBar() {
                     </div>
 
                     <div className="flex flex-row justify-center mx-auto w-2/6">
-                        <div className="mx-3">
+                        <div className="mx-3 text-gray-300">
                             <Link href="/" >Home</Link>
                         </div>
 
                         <div className="mx-3">
                             <Link href="/about" >
-                                <span className="hidden lg:inline">About Us</span>
-                                <span className="inline lg:hidden">About</span>
+                                <span className="hidden lg:inline text-gray-300">About Us</span>
+                                <span className="inline lg:hidden text-gray-300">About</span>
                             </Link>
                         </div>
 
-                        <div className="mx-3">
-                            <Link href="/book" >Books</Link>
+                        <div className="mx-3 text-gray-300">
+                            <Link href="/book">Books</Link>
                         </div>
 
                         <div className="mx-3">
                             <Link href="/team" >
-                                <span className="hidden lg:inline">Dream Team</span>
+                                <span className="hidden lg:inline text-gray-300">Dream Team</span>
                                 <span className="inline lg:hidden">Team</span>
                             </Link>
                         </div>
 
-                        <div className="mx-3">
+                        <div className="mx-3 text-gray-300">
                             <Link href="/contact" >Contact</Link>
                         </div>
                     </div>
