@@ -32,8 +32,8 @@ export default function TeamPage() {
                                     </div>
                                     <div className="bg-slate-600 p-3">
                                         <div>
-                                            <h2 className="text-center font-bold">Oleda Sinkler</h2>
-                                            <h2 className="text-center text-sm italic">Founder</h2>
+                                            <h2 className="text-center text-gray-200 font-bold">Oleda Sinkler</h2>
+                                            <h2 className="text-center text-gray-200 text-sm font-semibold italic">Founder</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -53,8 +53,8 @@ export default function TeamPage() {
                                     </div>
                                     <div className="bg-slate-600 p-3">
                                         <div>
-                                            <h2 className="text-center font-bold">Xavier Sinkler</h2>
-                                            <h2 className="text-center text-sm italic">Member</h2>
+                                            <h2 className="text-center text-gray-200 font-bold">Xavier Sinkler</h2>
+                                            <h2 className="text-center text-gray-200 text-sm italic">Member</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -74,8 +74,8 @@ export default function TeamPage() {
                                     </div>
                                     <div className="bg-slate-600 p-3">
                                         <div>
-                                            <h2 className="text-center font-bold">Janeice Gilbert </h2>
-                                            <h2 className="text-center text-sm italic">Member</h2>
+                                            <h2 className="text-center text-gray-200 font-bold">Janeice Gilbert </h2>
+                                            <h2 className="text-center text-gray-200 text-sm italic">Member</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -97,8 +97,8 @@ export default function TeamPage() {
                                     </div>
                                     <div className="bg-slate-600 p-3">
                                         <div>
-                                            <h2 className="text-center font-bold">Deborah Knapper</h2>
-                                            <h2 className="text-center text-sm italic">Member</h2>
+                                            <h2 className="text-center text-gray-200 font-bold">Deborah Knapper</h2>
+                                            <h2 className="text-center text-gray-200 text-sm italic">Member</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -119,8 +119,8 @@ export default function TeamPage() {
                                     </div>
                                     <div className="bg-slate-600 p-3">
                                         <div>
-                                            <h2 className="text-center font-bold">Ka’LaShae</h2>
-                                            <h2 className="text-center text-sm italic">Member</h2>
+                                            <h2 className="text-center text-gray-200 font-bold">Ka’LaShae</h2>
+                                            <h2 className="text-center text-gray-200 text-sm italic">Member</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -140,8 +140,8 @@ export default function TeamPage() {
                                     </div>
                                     <div className="bg-slate-600 p-3">
                                         <div>
-                                            <h2 className="text-center font-bold">Kimberly Dubose</h2>
-                                            <h2 className="text-center text-sm italic">Member</h2>
+                                            <h2 className="text-center text-gray-200 font-bold">Kimberly Dubose</h2>
+                                            <h2 className="text-center text-gray-200 text-sm italic">Member</h2>
                                         </div>
                                     </div>
                                 </div>
