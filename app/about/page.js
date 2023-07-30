@@ -6,7 +6,7 @@ export default function AboutPage() {
             <section className="mt-12 mb-10 max-w-4xl mx-auto">
                 <div className="flex flex-col bg-slate-800 bg-opacity-70 lg:flex lg:shadow-lg lg:rounded-lg">
                     <div className="px-7 md:px-12 pt-12">
-                        <h2 className="mb-5 text-2xl text-gray-300 font-bold md:text-3xl text-center">About Us</h2>
+                        <h2 className="dream_team mb-5 text-2xl text-gray-300 font-bold md:text-3xl text-center">About Us</h2>
                         <p className="mt-7 text-slate-200">
                             The purpose of the Rewrite the Narrative Workshops is to empower individuals to transform their lives by reshaping their personal narratives. These workshops help participants align their thoughts and words with their true aspirations, enabling them to understand how to fulfill their deepest desires. By exploring how to discover and follow God's Blueprint for their lives, participants can overcome their current circumstances and past experiences to reach their desired destination.
                         </p>

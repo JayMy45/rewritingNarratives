@@ -1,9 +1,12 @@
+
 'use client';
 
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import rewrteNarrativePen from '../public/rewrteNarrativePen.png';
+import GrayHouston from '../public/GrayHouston.png';
+import inHoustonColor from '../public/inHoustonColor.png';
 
 
 
@@ -11,8 +14,8 @@ import rewrteNarrativePen from '../public/rewrteNarrativePen.png';
 
 export default function Footer() {
 
-    const defaultImageSrc = 'https://res.cloudinary.com/dp04hh5pz/image/upload/v1688060410/Echelonical/houston.grayscale_e1u8yo.png';
-    const hoverImageSrc = 'https://res.cloudinary.com/dp04hh5pz/image/upload/v1688060773/Echelonical/houston.color.bronz_n5fzub.png'; // Add URL of the image you want to show on hover
+    const defaultImageSrc = GrayHouston;
+    const hoverImageSrc = inHoustonColor;
 
 
     const [imageSrc, setImageSrc] = useState(defaultImageSrc);
@@ -55,19 +58,26 @@ export default function Footer() {
                                     <div className="text-gray-300 underline text-sm hidden md:block">Social Media</div>
                                 </div>
                                 <div>
-                                    <a href="https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d">
-                                        <div className="text-gray-300 text-xs italic">Facebook</div>
-                                    </a>
+                                    <div className="text-gray-300 text-xs italic">
+                                        <a href="https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d">
+                                            Facebook
+                                        </a>
+                                    </div>
                                 </div>
                                 <div>
-                                    <a href="https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D">
-                                        <div className="text-gray-300 text-xs italic">Instagram</div>
-                                    </a>
+                                    <div className="text-gray-300 text-xs italic">
+                                        <a href="https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D">
+                                            Instagram
+                                        </a>
+                                    </div>
                                 </div>
                                 <div>
-                                    <a href="https://www.clubhouse.com/house/rewrite-the-narrative">
-                                        <div className="text-gray-300 text-xs italic">ClubHouse</div>
-                                    </a>
+
+                                    <div className="text-gray-300 text-xs italic">
+                                        <a href="https://www.clubhouse.com/house/rewrite-the-narrative">
+                                            ClubHouse
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -79,19 +89,25 @@ export default function Footer() {
                                 <div className="text-gray-300 underline text-sm hidden md:block">Information</div>
                             </div>
                             <div>
-                                <a href="/">
-                                    <div className="text-gray-300 text-xs italic">Home</div>
-                                </a>
+                                <div className="text-gray-300 text-xs italic">
+                                    <a href="/">
+                                        Home
+                                    </a>
+                                </div>
                             </div>
                             <div>
-                                <a href="contact">
-                                    <div className="text-gray-300 text-xs italic">Contact</div>
-                                </a>
+                                <div className="text-gray-300 text-xs italic">
+                                    <a href="contact">
+                                        Contact
+                                    </a>
+                                </div>
                             </div>
                             <div>
-                                <a href="contact">
-                                    <div className="text-gray-300 text-xs italic">About</div>
-                                </a>
+                                <div className="text-gray-300 text-xs italic">
+                                    <a href="contact">
+                                        About
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,7 +115,7 @@ export default function Footer() {
                 <div className="flex flex-row justify-center md:justify-end py-2 md:py-0">
                     <div className="flex items-center pb-3 md:p-0">
                         <a href="http://www.jeremynmyers.com">
-                            <h4 className="text-xxs bg-cyan-950 md:bg-transparent rounded-lg text-zinc-600 md:text-slate-400 px-1">JayMyDesign<span className="text-yellow-500">*</span></h4>
+                            <h4 className="text-xxs bg-cyan-950 md:bg-transparent rounded-xl text-zinc-300 md:text-slate-400 px-1">JayMyDesign<span className="text-yellow-500">*</span></h4>
                         </a>
                     </div>
                     <div className="flex-shrink-0 mr-0 p-0" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -111,8 +127,8 @@ export default function Footer() {
                                 className="items-center hidden md:block"
                                 src={imageSrc}
                                 alt="Picture of Dog"
-                                width={35}
-                                height={35}
+                                width={30}
+                                height={30}
                                 priority={true}
                             />
                         </Link>
