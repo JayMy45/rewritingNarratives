@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Hamburger from "./hamburger";
 
 export default function NavBar() {
 
@@ -74,6 +74,7 @@ export default function NavBar() {
                         </div>
                     </div>
                 </div>
+                {/* <Hamburger /> */}
             </nav>
 
         </>
