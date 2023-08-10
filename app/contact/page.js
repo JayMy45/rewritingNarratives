@@ -4,7 +4,7 @@ export default function ContactPage() {
 
     return (
         <>
-            <div className="mt-5">
+            <div className="mt-1 md:mt-5">
                 <div
                     className="py-7 h-full relative m-3 lg:mx-12 rounded-xl flex flex-col justify-center items-center"
                     style={{

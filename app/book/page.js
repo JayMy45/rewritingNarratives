@@ -6,7 +6,7 @@ export default function BookPage() {
 
     return (
         <>
-            <section className="mt-10 md:mt-0 mb-10">
+            <section className="mt-1 md:mt-0 mb-10">
                 <div>
                     <div className="text-center mt-5 md:mt-10 mb-5 md:mb-10">
                         <Link
