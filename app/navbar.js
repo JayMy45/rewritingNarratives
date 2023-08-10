@@ -5,6 +5,7 @@ export default function NavBar() {
 
     return (
         <>
+            {/* Navbar */}
             <nav className="hidden md:block h-34 mt-10 md:mt-0 md:mt-0 bg-gray-800 dark:bg-transparent">
                 <div className="flex justify-between h-full items-center">
                     <div className="w-1/6 hidden md:block">
@@ -74,6 +75,8 @@ export default function NavBar() {
                     </div>
                 </div>
             </nav>
+
+            {/* hamburger menu */}
             <div className="flex">
                 <Hamburger />
             </div>

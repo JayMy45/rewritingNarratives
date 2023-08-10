@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AiOutlineClose, AiOutlineFacebook, AiOutlineInstagram, AiOutlineMenu, AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 
 export default function Hamburger() {
@@ -15,6 +15,23 @@ export default function Hamburger() {
     useEffect(() => {
         console.log('NavBar rendered');
     }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 768 && navbarOpen) {
+                setNavbarOpen(false);
+            }
+        };
+
+        // Attach the event listener
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [navbarOpen]);
+
 
 
     return (
@@ -81,27 +98,29 @@ export default function Hamburger() {
                 </div>
                 <div>
                     <div className="flex flex-row justify-around pt-10 items-center">
-                        <Link href={'https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d'}
+
+                        {/* facebook link */}
+                        <Link href={"https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d"}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <AiOutlineInstagram
-                                size={30}
-                                className="cursor-pointer"
-                                onClick={() => setNavbarOpen(false)
-                                }
-                            />
+                            <img className="bg-white rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690513224/RewriteTheNarrative/Icon_Images_wwcmz7.png" alt="Facebook Logo" title="Facebook" />
                         </Link>
-                        <Link href={'https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D'}
+
+                        {/* instagram link */}
+                        <Link href={"https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D"}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <AiOutlineFacebook
-                                size={30}
-                                className="cursor-pointer"
-                                onClick={() => setNavbarOpen(false)
-                                }
-                            />
+                            <img className="bg-gray-200 rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690513678/RewriteTheNarrative/Icon_Images_2_jdxlrj.png" alt="Instagram Logo" title="Instagram" />
+                        </Link>
+
+                        {/* clubhouse link */}
+                        <Link href={"https://www.clubhouse.com/house/rewrite-the-narrative"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img className="bg-gray-200 rounded-lg w-7 h-7" src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690572546/RewriteTheNarrative/clubhouseIcon_hdkraj.png" alt="Clubhouse.com Logo" title="Clubhouse" />
                         </Link>
                     </div>
                 </div>
