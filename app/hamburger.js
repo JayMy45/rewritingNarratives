@@ -27,8 +27,8 @@ export default function Hamburger() {
                 />
             </div>
             <div className={navbarOpen
-                ? "fixed left-0 top-0 w-[75%] h-screen bg-slate-800 p-7 ease-in duration-500"
-                : "fixed left-[-100%]  w-[75%] h-screen top-0 p-10 ease-in duration-500"
+                ? "fixed left-0 top-0 w-[75%] h-screen bg-slate-800 p-7 ease-in duration-500 md:hidden z-50"
+                : "fixed left-[-100%]  w-[75%] h-screen top-0 p-10 ease-in duration-500 md:hidden z-50"
             }
             >
                 <div className="flex w-full items-center justify-end">
@@ -47,52 +47,62 @@ export default function Hamburger() {
                                 Home
                             </li>
                         </Link>
-                        <Link href="about">
+                        <Link href="/about">
                             <li
                                 onClick={() => setNavbarOpen(false)}
                                 className="py-4 cursor-pointer">
-                                About
+                                About Us
                             </li>
                         </Link>
-                        <Link href="testimonial">
+                        <Link href="/book">
                             <li
                                 onClick={() => setNavbarOpen(false)}
                                 className="py-4 cursor-pointer">
-                                Testimonial
+                                Books
                             </li>
                         </Link>
-                        <Link href="contact">
+                        <Link href="/team">
                             <li
                                 onClick={() => setNavbarOpen(false)
                                 }
                                 className="py-4 cursor-pointer">
-                                Contact
+                                Dream Team
+                            </li>
+                        </Link>
+                        <Link href="/contact">
+                            <li
+                                onClick={() => setNavbarOpen(false)
+                                }
+                                className="py-4 cursor-pointer">
+                                Contact Us
                             </li>
                         </Link>
                     </ul>
                 </div>
                 <div>
                     <div className="flex flex-row justify-around pt-10 items-center">
-
-                        <AiOutlineInstagram
-                            size={30}
-                            className="cursor-pointer"
-                            onClick={() => setNavbarOpen(false)
-                            }
-                        />
-                        <AiOutlineFacebook
-                            size={30}
-                            className="cursor-pointer"
-                            onClick={() => setNavbarOpen(false)
-                            }
-                        />
-                        <AiOutlineTwitter
-                            size={30}
-                            className="cursor-pointer"
-                            onClick={() => setNavbarOpen(false)
-                            }
-                        />
-
+                        <Link href={'https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <AiOutlineInstagram
+                                size={30}
+                                className="cursor-pointer"
+                                onClick={() => setNavbarOpen(false)
+                                }
+                            />
+                        </Link>
+                        <Link href={'https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <AiOutlineFacebook
+                                size={30}
+                                className="cursor-pointer"
+                                onClick={() => setNavbarOpen(false)
+                                }
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>

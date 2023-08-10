@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className='home_welcome m-0 text-7xl text-black dark:text-orange-300 mt-5'>Welcome</h1>
       </div>
 
-      <div className='xl:py-auto'>
+      <div className='xl:py-auto z-5'>
         <Image
           className="relative rounded-full mt-28 md:mt-0"
           src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690413201/RewriteTheNarrative/ReWrte_the_Narrative_4_tzprwx.png"
