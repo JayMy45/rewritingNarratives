@@ -10,7 +10,7 @@ export default function Home() {
 
       <div className='mt-0 md:mt-5 md:ml-60 xl:py-auto z-5 md:flex md:items-center'>
         <Image
-          className="relative rounded-full md:mt-28 md:mt-0"
+          className="relative rounded-full mt-10 md:mt-0"
           src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690413201/RewriteTheNarrative/ReWrte_the_Narrative_4_tzprwx.png"
           alt="Next.js Logo"
           width={450}
