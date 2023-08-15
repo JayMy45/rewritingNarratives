@@ -34,6 +34,29 @@ export default function BookPage() {
                         <div className="flex flex-col space-y-3 md:space-y-10">
 
                             <div className="flex flex-col md:flex-row flex-wrap space-y-4 md:space-y-0 mt-10">
+
+                                {/* Rewrite the Narrative */}
+                                <div className="w-fit overflow-hidden mx-auto">
+                                    <div className="flex flex-col justify-between">
+                                        <div className="">
+                                            <Link
+                                                href={"https://www.amazon.com/dp/B0CF72PCJJ?ref_=cm_sw_r_apin_dp_2DWEQYH5XKRWV410217R"}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <Image
+                                                    className=""
+                                                    src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1692062480/RewriteTheNarrative/BookPicture/PowerWithin_vifgcs.png"}
+                                                    alt="Picture of Name"
+                                                    width={200}
+                                                    height={200}
+                                                />
+                                            </Link>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                                 {/* Rewrite the Narrative */}
                                 <div className="w-fit overflow-hidden mx-auto">
                                     <div className="flex flex-col justify-between">
