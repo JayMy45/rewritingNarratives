@@ -35,7 +35,7 @@ export default function BookPage() {
 
                             <div className="flex flex-col md:flex-row flex-wrap space-y-4 md:space-y-0 mt-10">
 
-                                {/* Rewrite the Narrative */}
+                                {/* Power Within */}
                                 <div className="w-fit overflow-hidden mx-auto">
                                     <div className="flex flex-col justify-between">
                                         <div className="">
@@ -47,7 +47,7 @@ export default function BookPage() {
                                                 <Image
                                                     className=""
                                                     src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1692062480/RewriteTheNarrative/BookPicture/PowerWithin_vifgcs.png"}
-                                                    alt="Picture of Name"
+                                                    alt="Picture of Power Within"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -69,7 +69,7 @@ export default function BookPage() {
                                                 <Image
                                                     className=""
                                                     src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/Rewrite_The_Narrative_gwnwhn.png"}
-                                                    alt="Picture of Name"
+                                                    alt="Picture of Rewrite the Narrative"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -91,7 +91,7 @@ export default function BookPage() {
                                                 <Image
                                                     className="bg-gray-500"
                                                     src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/DumpingIdeas_fq4ajn.png"}
-                                                    alt="Picture of Name"
+                                                    alt="Picture of Dumping Ideas"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -112,7 +112,7 @@ export default function BookPage() {
                                                 <Image
                                                     className="bg-gray-500"
                                                     src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/HealingBrokenHearts_oi2owr.png"}
-                                                    alt="Picture of Name"
+                                                    alt="Picture of Healing the Brokenhearted"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -135,7 +135,7 @@ export default function BookPage() {
                                         <Image
                                             className=""
                                             src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/LetGo_r6cgni.png"}
-                                            alt="Picture of Name"
+                                            alt="Picture of Lets Go"
                                             width={200}
                                             height={200}
                                         />
@@ -152,7 +152,7 @@ export default function BookPage() {
                                         <Image
                                             className=""
                                             src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/MountainMover_etkl9c.png"}
-                                            alt="Picture of Name"
+                                            alt="Picture of Mountain Moving Prayers"
                                             width={200}
                                             height={200}
                                         />
@@ -169,7 +169,7 @@ export default function BookPage() {
                                         <Image
                                             className=""
                                             src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/JealousUnleashed_o8ppx7.png"}
-                                            alt="Picture of Name"
+                                            alt="Picture of Jealousy Unleashed"
                                             width={200}
                                             height={200}
                                         />
@@ -206,7 +206,7 @@ export default function BookPage() {
                                                 <Image
                                                     className=""
                                                     src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/AnointedPrayers_imkdyi.png"}
-                                                    alt="Picture of Name"
+                                                    alt="Picture of Anointed Prayers"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -245,7 +245,7 @@ export default function BookPage() {
                                                 <Image
                                                     className=""
                                                     src={"https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/TheOtherSide_fbiwoh.png"}
-                                                    alt="Picture of Name"
+                                                    alt="Picture of True Love"
                                                     width={200}
                                                     height={200}
                                                 />
