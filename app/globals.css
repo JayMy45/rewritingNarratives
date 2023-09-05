@@ -32,3 +32,9 @@ body {
   font-family: 'Abril Fatface', sans-serif;
   /* Replace 'YourCustomFont' with the name of the font you want to use */
 }
+
+.grid-container {
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
