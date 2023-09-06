@@ -127,8 +127,8 @@ export default function Footer() {
                                 className="items-center hidden md:block"
                                 src={imageSrc}
                                 alt="Picture of Dog"
-                                width={30}
-                                height={30}
+                                width={25}
+                                height={25}
                                 priority={true}
                             />
                         </Link>

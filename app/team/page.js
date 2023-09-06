@@ -6,10 +6,10 @@ export default function TeamPage() {
     return (
         <>
             {/* Team Container */}
-            <section className="mt-1 md:mt-5 mb-10">
+            <section className="mt-1 md:mt-5">
 
                 <div className="text-center ">
-                    <div className="mb-16">
+                    <div className="mb-16 md:mb-12">
                         <h1 className="dream_team text-4xl md:text-3xl font-semibold">
                             Dream Team
                         </h1>
