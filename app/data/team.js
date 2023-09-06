@@ -1,4 +1,4 @@
-const teamMembers = [
+export const teamMembers = [
     {
         id: 1,
         name: "Oleda Sinkler",
