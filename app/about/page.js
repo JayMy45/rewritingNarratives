@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutPage() {
     return (
         <>
-            <section className="mt-1 md:mt-10 mb-10 max-w-4xl mx-auto">
+            <section className="mt-1 mb-1 md:mt-5 md:mb-5 max-w-4xl mx-auto">
                 <div className="flex flex-col bg-slate-800 bg-opacity-70 lg:flex lg:shadow-lg lg:rounded-lg">
                     <div className="px-7 md:px-12 pt-12">
                         <h2 className="dream_team mb-5 text-2xl text-gray-300 font-bold md:text-3xl text-center">About Us</h2>
@@ -40,7 +40,7 @@ export default function AboutPage() {
                         If the idea of participating in a Rewrite the Narrative workshop resonates with you, feel free to reach out to us via email, and we'll be thrilled to get things started. All it requires is the strength, courage, and confidence to acknowledge that this workshop is exactly what you need. While we don't offer one-on-one sessions, we are more than happy to arrange a workshop for a group of 10 or more individuals. Together, we can embark on a transformative journey, empowering each participant to rewrite their narrative and embrace positive change in their lives.
                     </p>
                     <div className="p-10 mb-4">
-                        <a href="contact" className="p-2 border-2 rounded-md hover:bg-blue-700">
+                        <a href="contact" className="p-2 border-2 rounded-md text-slate-100 hover:bg-blue-700">
                             Inquire About a Workshop
                         </a>
                     </div>
