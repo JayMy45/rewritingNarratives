@@ -9,7 +9,7 @@ export default function ContactPage() {
                     className="py-7 h-full relative m-3 lg:mx-12 rounded-xl flex flex-col justify-center items-center"
                     style={{
                         backgroundImage:
-                            "linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.63)), url('https://res.cloudinary.com/dp04hh5pz/image/upload/v1688935601/Echelonical/32308810-8F92-435E-84EE-56022BE04D69_1_201_a_yvpaak.jpg')",
+                            "linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url('https://res.cloudinary.com/dp04hh5pz/image/upload/v1688935601/Echelonical/32308810-8F92-435E-84EE-56022BE04D69_1_201_a_yvpaak.jpg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}
