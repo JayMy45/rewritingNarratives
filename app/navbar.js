@@ -19,7 +19,7 @@ export default function NavBar() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-center mx-auto w-2/6">
+                    <div className="flex flex-row justify-center ml-48 w-3/6">
                         <div className="hidden md:block mx-3 text-gray-300">
                             <Link href="/" >Home</Link>
                         </div>
@@ -46,8 +46,17 @@ export default function NavBar() {
                             <Link href="/contact" >Contact</Link>
                         </div>
                     </div>
+
+                    <div className="w-1/6 border border-red-400 flex justify-center bg-yellow-600 rounded-md px-3 py-2">
+                        <div className="uppercase font-bold text-lg text-blue-700">
+                            <Link href="events" >Upcoming Events</Link>
+                        </div>
+                    </div>
+
+
                     <div className="w-1/6 hidden md:block">
                         <div className="flex justify-between w-24 mx-auto">
+
 
                             {/* facebook link */}
                             <div>
@@ -77,7 +86,7 @@ export default function NavBar() {
             </nav>
 
             {/* hamburger menu */}
-            <div className="flex">
+            <div className="flex border-b md:border-none">
                 <Hamburger />
             </div>
         </>

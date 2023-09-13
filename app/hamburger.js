@@ -86,6 +86,14 @@ export default function Hamburger() {
                                 Dream Team
                             </li>
                         </Link>
+                        <Link href="events">
+                            <li
+                                onClick={() => setNavbarOpen(false)
+                                }
+                                className="py-4 text-slate-100 cursor-pointer">
+                                Upcoming Events
+                            </li>
+                        </Link>
                         <Link href="/contact">
                             <li
                                 onClick={() => setNavbarOpen(false)
