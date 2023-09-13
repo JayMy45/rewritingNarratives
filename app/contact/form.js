@@ -67,7 +67,7 @@ export default function ContactForm() {
                         <label className="font-semibold text-sm md:text-lg text-gray-200" htmlFor="name">Name</label>
                         <input
                             id="name"
-                            className="p-2 md:p-4 bg-gray-200 text-black rounded-md md:w-11/12"
+                            className="p-2 md:p-4 bg-gray-300 text-black rounded-md md:w-11/12"
                             required
                             type="text"
                             minLength={2}
@@ -81,7 +81,7 @@ export default function ContactForm() {
                         <label className="font-semibold text-sm md:text-lg text-gray-200" htmlFor="email">email</label>
                         <input
                             id="email"
-                            className="p-2 md:p-4 bg-gray-200 text-black rounded-md md:w-11/12"
+                            className="p-2 md:p-4 bg-gray-300 text-black rounded-md md:w-11/12"
                             required
                             type="email"
                             minLength={5}
@@ -95,7 +95,7 @@ export default function ContactForm() {
                         <label className="font-semibold text-white" htmlFor="message text-gray-200">Send an inquiry about a workshop</label>
                         <textarea
                             id="message"
-                            className="p-2 text-black bg-gray-200 rounded-md md:w-11/12"
+                            className="p-2 text-black bg-gray-300 rounded-md md:w-11/12"
                             name="message"
                             rows={4}
                             minLength={10}
