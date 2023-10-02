@@ -5,17 +5,17 @@ export default function Events() {
 
     return (
         <>
-            <section className="max-h-full">
-                <div>
-                    <div className="h-full grid grid-cols-1 md:grid-cols-2 gap-10 w-fit mx-auto m-5 mb-5 md:mt-12 md:mb-12">
+            <section className="flex justify-center items-center min-h-full">
+                <div className="w-fit">
+                    <div className="h-full grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto m-5 mb-5 md:mt-12 md:mb-12">
                         {
                             EventsData.map(({ location, date, time, link, image, active }) => (
                                 active
-                                    ? <div className="flex flex-col md:flex-row rounded-md border border-yellow-700 overflow-hidden shadow-xl">
+                                    ? <div className="flex flex-col md:flex-row justify-center items-center rounded-md border border-yellow-700 overflow-hidden shadow-xl">
                                         <div className="hidden md:block">
                                             <Image
                                                 src={image}
-                                                alt="Orangeburg, SC"
+                                                alt={`Picture of event held on on ${date} in ${location}`}
                                                 width={300}
                                                 height={300}
                                                 className=""
@@ -24,13 +24,13 @@ export default function Events() {
                                         <div className="md:hidden block">
                                             <Image
                                                 src={image}
-                                                alt="Orangeburg, SC"
+                                                alt={`Picture of event held on on ${date} in ${location}`}
                                                 width={300}
                                                 height={300}
                                                 className="w-full"
                                             />
                                         </div>
-                                        <div className="flex flex-col bg-stone-500 w-80 p-3">
+                                        <div className="flex flex-col h-full bg-stone-500 w-80 p-3">
                                             <div className="hidden md:block p-5 text-slate-200">
                                                 <div className="w-fit mt-10">
                                                     <h2 className="font-semibold text-gray-200">Location:</h2>
