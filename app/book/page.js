@@ -36,27 +36,30 @@ export default function BookPage() {
                                         </h1>
                                     </div>
 
-                                    <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                                        {books.map(({ id, title, amazonLink, image }) => (
-                                            <div className="w-fit overflow-hidden mx-auto" key={id}>
-                                                <div className="flex flex-col justify-between">
-                                                    <div className="">
-                                                        <Link
-                                                            href={amazonLink}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                        >
-                                                            <Image
-                                                                className=""
-                                                                src={image}
-                                                                alt={`Picture of ${title}`}
-                                                                width={200}
-                                                                height={200}
-                                                            />
-                                                        </Link>
+                                    <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+                                        {books.map(({ id, title, amazonLink, image, active }) => (
+                                            active
+                                                ? <div className="w-fit overflow-hidden mx-auto" key={id}>
+                                                    <div className="flex flex-col justify-between">
+                                                        <div className="">
+                                                            <Link
+                                                                href={amazonLink}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                <Image
+                                                                    className=""
+                                                                    src={image}
+                                                                    alt={`Picture of ${title}`}
+                                                                    width={200}
+                                                                    height={200}
+                                                                />
+                                                                <h2 className="text-center pt-3 font-semibold">{title}</h2>
+                                                            </Link>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                : null
                                         ))}
                                     </div>
                                 </div>
