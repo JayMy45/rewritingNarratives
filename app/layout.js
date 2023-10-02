@@ -29,10 +29,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${niconne.variable}`}>
+    <html lang="en" className='h-full'>
+      <body className={`${inter.variable} ${niconne.variable} flex flex-col h-full`}>
         <NavBar />
-        {children}
+        <div className='flex-grow'>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
