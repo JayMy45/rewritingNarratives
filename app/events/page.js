@@ -8,8 +8,8 @@ export default function Events() {
             <section>
                 <div className="h-full grid grid-cols-1 md:grid-cols-2 gap-10 w-fit mx-auto m-5 mb-5 md:mt-12 md:mb-12">
                     {
-                        EventsData.map(({ location, date, time, link, image }) => (
-                            <div className="flex flex-col md:flex-row rounded-md border border-yellow-700 overflow-hidden shadow-xl">
+                        EventsData.map(({ location, date, time, link, image, active }) => (
+                            active ? <div className="flex flex-col md:flex-row rounded-md border border-yellow-700 overflow-hidden shadow-xl">
                                 <div className="hidden md:block">
                                     <Image
                                         src={image}
@@ -49,6 +49,7 @@ export default function Events() {
                                     </div>
                                 </div>
                             </div>
+                                : null
                         ))}
 
                 </div>

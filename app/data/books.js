@@ -34,7 +34,7 @@ export const authorPage = [
 
         },
         {
-            id: 5,  // New ID
+            id: 5,
             title: "Let's Go",
             amazonLink: "https://www.amazon.com/LET-GO-Embracing-Freedom-Healing-ebook/dp/B0CBY6M7DV/?_encoding=UTF8&pd_rd_w=6Nkbe&content-id=amzn1.sym.ed85217c-14c9-4aa0-b248-e47393e2ce12&pf_rd_p=ed85217c-14c9-4aa0-b248-e47393e2ce12&pf_rd_r=145-6045852-0224312&pd_rd_wg=e33QA&pd_rd_r=cd590a9e-0763-4601-bbed-f8135b09d919&ref_=aufs_ap_sc_dsk",
             image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609481/RewriteTheNarrative/BookPicture/LetGo_r6cgni.png",
@@ -42,7 +42,7 @@ export const authorPage = [
 
         },
         {
-            id: 6,  // New ID
+            id: 6,
             title: "Mountain Moving Prayers",
             amazonLink: "https://www.amazon.com/Mountain-Moving-Prayers-Unleashing-Power/dp/B0C9SNQF75/ref=sr_1_4?crid=2WA5IYU5YPIUC&keywords=oleda+sinkler&qid=1696268039&sprefix=oleda+sinkler%2Caps%2C83&sr=8-4",
             image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/MountainMover_etkl9c.png",
@@ -50,7 +50,7 @@ export const authorPage = [
 
         },
         {
-            id: 7,  // New ID
+            id: 7,
             title: "Jealousy Unleashed",
             amazonLink: "https://www.amazon.com/Jealousy-Unleashed-But-God-Blocked/dp/B0C9SHFTRQ/?_encoding=UTF8&pd_rd_w=6Nkbe&content-id=amzn1.sym.ed85217c-14c9-4aa0-b248-e47393e2ce12&pf_rd_p=ed85217c-14c9-4aa0-b248-e47393e2ce12&pf_rd_r=145-6045852-0224312&pd_rd_wg=e33QA&pd_rd_r=cd590a9e-0763-4601-bbed-f8135b09d919&ref_=aufs_ap_sc_dsk",
             image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/JealousUnleashed_o8ppx7.png",
