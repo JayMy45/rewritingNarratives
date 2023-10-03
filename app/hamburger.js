@@ -36,7 +36,7 @@ export default function Hamburger() {
 
     return (
         <>
-            <div className="flex items-center cursor-pointer md:hidden mx-auto my-5 mr-5">
+            <div className="flex items-center text-slate-100 dark:text-gray-200 cursor-pointer md:hidden mx-auto my-5 mr-5">
                 <AiOutlineMenu
                     onClick={handleToggle}
                     size={30}

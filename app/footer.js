@@ -55,17 +55,17 @@ export default function Footer() {
                             </div>
                             <div className="flex flex-row md:flex-col justify-evenly text-center md:mt-7 space-x-2 md:space-x-0">
                                 <div>
-                                    <div className="text-gray-300 underline text-sm hidden md:block">Social Media</div>
+                                    <div className="text-slate-100 dark:text-gray-200 underline text-sm hidden md:block">Social Media</div>
                                 </div>
                                 <div>
-                                    <div className="text-gray-300 text-xs italic">
+                                    <div className="text-slate-100 dark:text-gray-200 text-xs italic">
                                         <a href="https://www.facebook.com/profile.php?id=100092835397018&mibextid=LQQJ4d">
                                             Facebook
                                         </a>
                                     </div>
                                 </div>
                                 <div>
-                                    <div className="text-gray-300 text-xs italic">
+                                    <div className="text-slate-100 dark:text-gray-200 text-xs italic">
                                         <a href="https://www.instagram.com/oledasinkler_/?igshid=MmIzYWVlNDQ5Yg%3D%3D">
                                             Instagram
                                         </a>
@@ -73,7 +73,7 @@ export default function Footer() {
                                 </div>
                                 <div>
 
-                                    <div className="text-gray-300 text-xs italic">
+                                    <div className="text-slate-100 dark:text-gray-200 text-xs italic">
                                         <a href="https://www.clubhouse.com/house/rewrite-the-narrative">
                                             ClubHouse
                                         </a>
@@ -86,24 +86,24 @@ export default function Footer() {
                         <div className="flex flex-row md:flex-col justify-evenly text-center md:border-l md:mt-6 md:mr-20 space-x-2 md:space-x-0">
 
                             <div className="">
-                                <div className="text-gray-300 underline text-sm hidden md:block">Information</div>
+                                <div className="text-slate-100 dark:text-gray-200 underline text-sm hidden md:block">Information</div>
                             </div>
                             <div>
-                                <div className="text-gray-300 text-xs italic">
+                                <div className="text-slate-100 dark:text-gray-200 text-xs italic">
                                     <a href="/">
                                         Home
                                     </a>
                                 </div>
                             </div>
                             <div>
-                                <div className="text-gray-300 text-xs italic">
+                                <div className="text-slate-100 dark:text-gray-200 text-xs italic">
                                     <a href="contact">
                                         Contact
                                     </a>
                                 </div>
                             </div>
                             <div>
-                                <div className="text-gray-300 text-xs italic">
+                                <div className="text-slate-100 dark:text-gray-200 text-xs italic">
                                     <a href="contact">
                                         About
                                     </a>
