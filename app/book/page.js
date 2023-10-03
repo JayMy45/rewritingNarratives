@@ -39,7 +39,7 @@ export default function BookPage() {
                                     <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
                                         {books.map(({ id, title, amazonLink, image, active }) => (
                                             active
-                                                ? <div className="w-fit overflow-hidden mx-auto" key={id}>
+                                                ? <div className="w-fit overflow-hidden mx-auto mb-7" key={id}>
                                                     <div className="flex flex-col justify-between">
                                                         <div className="">
                                                             <Link
