@@ -112,7 +112,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row justify-center md:justify-end py-2 md:py-0">
+                <div className="flex flex-row justify-center md:justify-end py-2 md:py-0 bg-gray-800 dark:bg-transparent">
                     <div className="flex items-center pb-3 md:p-0">
                         <a href="http://www.jeremynmyers.com">
                             <h4 className="text-xxs bg-cyan-950 md:bg-transparent rounded-xl text-zinc-300 md:text-slate-400 px-1">&copy; 2023 JayMyDesign<span className="text-yellow-500">*</span></h4>
