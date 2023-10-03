@@ -23,7 +23,7 @@ export default function Events() {
                                                 className=""
                                             />
                                         </div>
-                                        <div className="md:hidden block">
+                                        <div className="md:hidden block w-96">
                                             <Image
                                                 src={image}
                                                 alt={`Picture of event held on on ${date} in ${location}`}
@@ -48,7 +48,7 @@ export default function Events() {
                                             </div>
                                             <div className="border-2 w-fit h-fit px-3 py-1 mx-auto rounded-lg bg-green-700 md:mt-10">
                                                 <a href={link} className="text-slate-300 font-bold">
-                                                    Click to RSVP
+                                                    Click here to RSVP
                                                 </a>
                                             </div>
                                         </div>
