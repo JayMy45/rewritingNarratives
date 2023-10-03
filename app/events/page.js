@@ -13,7 +13,7 @@ export default function Events() {
                         {
                             EventsData.map(({ location, date, time, link, image, active }) => (
                                 active
-                                    ? <div className="flex flex-col md:flex-row justify-center items-center rounded-md border border-yellow-700 overflow-hidden shadow-xl">
+                                    ? <div className="flex flex-col md:flex-row justify-center items-center w-fit rounded-md border border-yellow-700 overflow-hidden shadow-xl">
                                         <div className="hidden md:block">
                                             <Image
                                                 src={image}
@@ -32,7 +32,7 @@ export default function Events() {
                                                 className="w-full"
                                             />
                                         </div>
-                                        <div className="flex flex-col h-full bg-stone-500 w-80 p-3">
+                                        <div className="flex flex-col h-full bg-stone-500 w-full md:w-80 p-3">
                                             <div className="hidden md:block p-5 text-slate-200">
                                                 <div className="w-fit mt-10">
                                                     <h2 className="font-semibold text-gray-200">Location:</h2>
@@ -48,7 +48,7 @@ export default function Events() {
                                             </div>
                                             <div className="border-2 w-fit h-fit px-3 py-1 mx-auto rounded-lg bg-green-700 md:mt-10">
                                                 <a href={link} className="text-slate-300 font-bold">
-                                                    Click Here to RSVP
+                                                    Click to RSVP
                                                 </a>
                                             </div>
                                         </div>

@@ -48,8 +48,11 @@ export default function NavBar() {
                     </div>
 
                     <div className="w-1/6 border border-red-400 flex justify-center bg-yellow-600 rounded-md px-3 py-2">
-                        <div className="uppercase font-bold text-lg text-blue-700">
-                            <Link href="events" >Upcoming Events</Link>
+                        <div className="uppercase font-bold text-blue-700">
+                            <Link href="events" >
+                                <h2 className="md:hidden lg:block lg:text-lg">Upcoming Events</h2>
+                                <h2 className="md:block lg:hidden text-md lg:text-lg">Events</h2>
+                            </Link>
                         </div>
                     </div>
 
@@ -86,7 +89,7 @@ export default function NavBar() {
             </nav>
 
             {/* hamburger menu */}
-            <div className="flex border-b md:border-none">
+            <div className="flex border-b border-gray-400 dark:border-gray-950 md:border-none">
                 <Hamburger />
             </div>
         </>
