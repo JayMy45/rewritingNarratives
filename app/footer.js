@@ -53,9 +53,12 @@ export default function Footer() {
                             <div className="md:mt-7 hidden md:block">
                                 <h5 className="italic font-bold text-slate-100 ml-12">"Empowering Individuals to Transform"</h5>
                             </div>
-                            <div className="flex flex-row md:flex-col justify-evenly text-center md:mt-7 space-x-2 md:space-x-0">
+                            <div className="flex flex-row md:flex-col justify-evenly text-center md:mt-7 space-x-2 md:space-x-0  md:pl-4">
                                 <div>
-                                    <div className="text-slate-100 dark:text-gray-200 underline text-sm hidden md:block">Social Media</div>
+                                    <div className="text-slate-100 dark:text-gray-200 underline text-sm hidden md:block">
+                                        <h2 className="block lg:hidden">Social</h2>
+                                        <h2 className="hidden lg:block">Social Media</h2>
+                                    </div>
                                 </div>
                                 <div>
                                     <div className="text-slate-100 dark:text-gray-200 text-xs italic">
@@ -83,7 +86,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="flex-grow pb-1 md:pb-0">
-                        <div className="flex flex-row md:flex-col justify-evenly text-center md:border-l md:mt-6 md:mr-20 space-x-2 md:space-x-0">
+                        <div className="flex flex-row md:flex-col justify-evenly text-center lg:border-l md:mt-6 md:mr-10 lg:mr-20 space-x-2 md:space-x-0">
 
                             <div className="">
                                 <div className="text-slate-100 dark:text-gray-200 underline text-sm hidden md:block">Information</div>
@@ -109,6 +112,14 @@ export default function Footer() {
                                     </a>
                                 </div>
                             </div>
+
+                        </div>
+                    </div>
+                    <div className="w-fit mt-2 block md:hidden border border-red-800 bg-yellow-700 rounded-sm px-1 py-1">
+                        <div className="uppercase font-bold text-blue-800">
+                            <Link href="events" >
+                                <h2 className="text-xs  mx-auto">Events</h2>
+                            </Link>
                         </div>
                     </div>
                 </div>
