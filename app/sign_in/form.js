@@ -1,6 +1,7 @@
 'use client'
 
 
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
@@ -11,11 +12,13 @@ export default function ContactForm() {
     // loading state for submit button
     const [loading, setLoading] = useState(false);
     const [phoneNumber, setPhoneNumber] = useState('');
+    const router = useRouter();
+
 
 
     // notify functions to display toast messages
     const notifySuccess = () => {
-        toast.success('Sign-In submitted successfully');
+        toast.success('Registration submitted successfully');
     };
 
     const notifyError = () => {
@@ -65,6 +68,11 @@ export default function ContactForm() {
 
             // display toast message when email is sent successfully
             notifySuccess();
+
+            // Redirect to home after a short delay
+            setTimeout(() => {
+                router.push('/');
+            }, 5000);  // 5000ms (5s) to allow the toast message to be shown for a bit
         }
         if (!response.ok) {
             setLoading(false);
