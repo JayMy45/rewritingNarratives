@@ -17,5 +17,14 @@ export const EventsData = [
         image: "/Orangeburg.png",
         active: true
     },
+    {
+        location: "4991 Park Rd., Ridgeway, 29130",
+        date: "November 11, 2023",
+        time: "11:00am - 1:00pm",
+        description: "Unlock Your Potential: Understand how your narrative influences your choices and self-perception. Join us for an inspiring workshop where we'll explore the power of your story, or what you are telling yourself.",
+        link: "https://www.eventbrite.com/e/rewrite-the-narrative-workshop-tickets-739017129127?aff=oddtdtcreator",
+        image: "/Nov11.Columbia.png",
+        active: true
+    },
 
 ]
