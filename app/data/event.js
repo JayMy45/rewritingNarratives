@@ -26,7 +26,7 @@ export const EventsData = [
         date: "October 28, 2023",
         time: "11:00am - 1:00pm",
         description: "Realize how your personal story shapes your decisions and self-view. Attend our motivating workshop to delve into the strength of your narrative and the stories you tell yourself.",
-        link: "https://www.eventbrite.com/e/rewrite-the-narrative-workshop-tickets-739017129127?aff=oddtdtcreator",
+        link: "https://www.eventbrite.com/e/rewrite-the-narrative-workshop-tickets-740618167877?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
         image: "/Oct28th.png",
         active: true
     },
