@@ -1,5 +1,6 @@
 export const EventsData = [
     {
+        id: 1,
         location: "420 Valley Hill Rd. SW Riverdale, GA 30274",
         date: "September 30, 2023",
         time: "11:00am - 1:00pm",
@@ -9,6 +10,8 @@ export const EventsData = [
         active: false
     },
     {
+        id: 2,
+
         location: "1645 Russel St. Orangeburg, SC 29115",
         date: "October 21, 2023",
         time: "10:30am - 11:45am",
@@ -18,6 +21,17 @@ export const EventsData = [
         active: true
     },
     {
+        id: 3,
+        location: "6131 Riverdale Road, Riverdale, GA 30274",
+        date: "October 28, 2023",
+        time: "11:00am - 1:00pm",
+        description: "Realize how your personal story shapes your decisions and self-view. Attend our motivating workshop to delve into the strength of your narrative and the stories you tell yourself.",
+        link: "https://www.eventbrite.com/e/rewrite-the-narrative-workshop-tickets-739017129127?aff=oddtdtcreator",
+        image: "/Oct28th.png",
+        active: true
+    },
+    {
+        id: 4,
         location: "4991 Park Rd., Ridgeway, 29130",
         date: "November 11, 2023",
         time: "11:00am - 1:00pm",
