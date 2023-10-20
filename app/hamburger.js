@@ -13,10 +13,6 @@ export default function Hamburger() {
     }
 
     useEffect(() => {
-        console.log('NavBar rendered');
-    }, []);
-
-    useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 739 && navbarOpen) {
                 setNavbarOpen(false);
