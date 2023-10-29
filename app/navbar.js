@@ -83,7 +83,7 @@ export default function NavBar() {
                             </div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="rounded-lg border">
                     </div>
                 </div>
             </nav>
