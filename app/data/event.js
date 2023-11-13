@@ -38,7 +38,7 @@ export const EventsData = [
         description: "Unlock Your Potential: Understand how your narrative influences your choices and self-perception. Join us for an inspiring workshop where we'll explore the power of your story, or what you are telling yourself.",
         link: "https://www.eventbrite.com/e/rewrite-the-narrative-workshop-tickets-739017129127?aff=oddtdtcreator",
         image: "/Nov11.Columbia.png",
-        active: true
+        active: false
     },
 
 ]
