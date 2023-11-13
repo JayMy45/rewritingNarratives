@@ -10,6 +10,10 @@ export default function Events() {
             <section className="flex justify-center items-center min-h-full">
                 <div className="w-fit">
                     <div className={`h-full grid grid-cols-1 ${activeEventsCount > 1 ? 'md:grid-cols-2' : ''} gap-10 mx-auto m-5 mb-5 md:mt-12 md:mb-12`}>
+                        <div>
+                            <p>Stay tuned for updates.</p>
+                        </div>
+
                         {
                             EventsData.map(({ location, date, time, link, image, active }) => {
                                 // Create a new Date object for the event date
