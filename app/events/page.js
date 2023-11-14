@@ -19,7 +19,7 @@ export default function Events() {
                                         alt="Picture of the author"
                                         width={100}
                                         height={100}
-                                        className="rounded-lg ml-2 mt-2"
+                                        className="ml-2 mt-2"
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center">
@@ -36,8 +36,8 @@ export default function Events() {
                             <div className="h-full w-full p-5">
                                 <div className="flex flex-col h-full rounded-lg bg-gray-700 shadow-md shadow-gray-500">
                                     <div className="flex flex-col mx-auto my-auto">
-                                        <h2 className="uppercase font-bold text-2xl">More to come in 2024</h2>
-                                        <h3 className="italic text-xs">interested in hosting a workshop?</h3>
+                                        <h2 className="uppercase font-bold text-2xl text-gray-200">More to come in 2024</h2>
+                                        <h3 className="italic text-xs text-gray-200">interested in hosting a workshop?</h3>
                                         <Link href="/contact">
                                             <h3 className="italic text-xs text-indigo-400">click here</h3>
                                         </Link>
