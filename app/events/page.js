@@ -1,6 +1,44 @@
 import Image from "next/image";
 import { EventsData } from "../data/event";
 import Link from "next/link";
+import Head from "next/head";
+
+export const metadata = {
+    title: 'Upcoming Events | Rewrite the Narrative',
+    description: 'Discover the latest events and workshops hosted by Rewrite the Narrative. Stay tuned for updates and opportunities to engage in our community activities.',
+    openGraph: {
+        title: 'Join Our Events - Rewrite the Narrative',
+        description: 'Participate in Rewrite the Narrative’s upcoming events and workshops. Explore our schedule and RSVP for an enriching community experience.',
+    },
+};
+
+const activeEventsJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': EventsData.some(event => event.active) ? 'EventSeries' : 'Event',
+    'name': 'Upcoming Events | Rewrite the Narrative',
+    'description': EventsData.some(event => event.active) ?
+        'Join our engaging series of upcoming events and workshops hosted by Rewrite the Narrative. Explore and RSVP to be a part of our vibrant community activities.' :
+        'Currently, there are no active events. Stay tuned for updates on upcoming events and workshops at Rewrite the Narrative.',
+    'event': EventsData.filter(event => event.active).map(event => ({
+        '@type': 'Event',
+        'name': "Rewrite the Narrative's Workshop",
+        'startDate': event.date,
+        'location': {
+            '@type': 'Place',
+            'name': event.location,
+            'address': event.address
+        },
+        'image': event.image,
+        'description': event.description || 'Join us at Rewrite the Narrative for an engaging and inspiring event.', // Default description; replace with actual event description if available
+        'url': event.link
+    })).concat(!EventsData.some(event => event.active) ? [{
+        '@type': 'Event',
+        'name': 'Check Back Soon',
+        'description': 'No active events at the moment. Please check back later for updates on future events.',
+        'url': 'https://www.rewritethenarrative.com/events' // Adjust with the actual URL of the events page
+    }] : [])
+};
+
 
 export default function Events() {
 
@@ -8,6 +46,13 @@ export default function Events() {
 
     return (
         <>
+            <Head>
+                {/* Injecting the JSON-LD structured data */}
+                <script type="application/ld+json">
+                    {JSON.stringify(activeEventsJsonLd)}
+                </script>
+            </Head>
+
             <section className="flex justify-center items-center min-h-full">
                 <div className="w-fit">
                     <div className={`h-full grid grid-cols-1 ${activeEventsCount > 1 ? 'md:grid-cols-2' : ''} gap-10 mx-auto m-5 mb-5 md:mt-12 md:mb-12`}>
