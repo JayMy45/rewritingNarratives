@@ -22,15 +22,22 @@ export default function Events() {
                                         className="rounded-lg ml-2 mt-2"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex flex-col justify-center items-center">
                                     <p className="italic mr-10">Stay tuned for updates...</p>
+                                    <Image
+                                        src="/rewrteNarrativePen.png"
+                                        alt="Picture of Pen"
+                                        width={100}
+                                        height={100}
+                                        className="mt-2 mr-5"
+                                    />
                                 </div>
                             </div>
                             <div className="h-full w-full p-5">
                                 <div className="flex flex-col h-full rounded-lg bg-gray-700 shadow-md shadow-gray-500">
                                     <div className="flex flex-col mx-auto my-auto">
                                         <h2 className="uppercase font-bold text-2xl">More to come in 2024</h2>
-                                        <h3 className="italic text-xs">interested in hosting a workshop in 2024</h3>
+                                        <h3 className="italic text-xs">interested in hosting a workshop?</h3>
                                         <Link href="/contact">
                                             <h3 className="italic text-xs text-indigo-400">click here</h3>
                                         </Link>
