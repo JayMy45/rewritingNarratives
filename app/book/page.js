@@ -1,12 +1,55 @@
 import Image from "next/image";
 import Link from "next/link";
 import { authorPage } from "../data/books";
+import Head from "next/head";
+
+// SEO Metadata
+export const metadata = {
+    title: 'Books | RewriteTheNarrative',
+    description: 'List of books written by various team members of Rewrite the Narrative.',
+    openGraph: {
+        title: 'Books | RewriteTheNarrative',
+        description: 'List of books written by various team members of Rewrite the Narrative.',
+    },
+};
+
+// JSON-LD structured data for About Us page
+const bookPageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': 'Available Books | BookList',
+    'description': 'Explore a wide range of books from multiple authors at BookList.',
+    'url': 'https://www.booklist.com/books',
+    'mainEntity': authorPage.map(author => ({
+        '@type': 'Person',
+        'name': author.name,
+        'url': `https://www.booklist.com/books/${author.id}`,
+        'workExample': author.books.map(book => ({
+            '@type': 'Book',
+            'name': book.title,
+            'image': book.image,
+            'url': book.amazonLink,
+            'author': {
+                '@type': 'Person',
+                'name': author.name
+            }
+        }))
+    }))
+};
+
 
 export default function BookPage() {
 
 
     return (
         <>
+            <Head>
+                {/* Injecting the JSON-LD structured data */}
+                <script type="application/ld+json">
+                    {JSON.stringify(bookPageJsonLd)}
+                </script>
+            </Head>
+
             <section className="mt-1 md:mt-0 mb-10">
                 <div>
                     <div className="text-center mt-5 md:mt-10 mb-5 md:mb-10">
