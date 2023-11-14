@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { EventsData } from "../data/event";
+import Link from "next/link";
 
 export default function Events() {
 
@@ -10,8 +11,32 @@ export default function Events() {
             <section className="flex justify-center items-center min-h-full">
                 <div className="w-fit">
                     <div className={`h-full grid grid-cols-1 ${activeEventsCount > 1 ? 'md:grid-cols-2' : ''} gap-10 mx-auto m-5 mb-5 md:mt-12 md:mb-12`}>
-                        <div>
-                            <p>Stay tuned for updates...</p>
+                        <div className="flex flex-col h-96 w-96 rounded-lg p-2 shadow-lg shadow-gray-500">
+                            <div className="flex justify-between">
+                                <div>
+                                    <Image
+                                        src="https://res.cloudinary.com/dp04hh5pz/image/upload/v1690519474/RewriteTheNarrative/ReWriteTheNarrative.bgRed_v6x6zc.png"
+                                        alt="Picture of the author"
+                                        width={100}
+                                        height={100}
+                                        className="rounded-lg ml-2 mt-2"
+                                    />
+                                </div>
+                                <div className="flex justify-center items-center">
+                                    <p className="italic mr-10">Stay tuned for updates...</p>
+                                </div>
+                            </div>
+                            <div className="h-full w-full p-5">
+                                <div className="flex flex-col h-full rounded-lg bg-gray-700 shadow-md shadow-gray-500">
+                                    <div className="flex flex-col mx-auto my-auto">
+                                        <h2 className="uppercase font-bold text-2xl">More to come in 2024</h2>
+                                        <h3 className="italic text-xs">interested in hosting a workshop in 2024</h3>
+                                        <Link href="/contact">
+                                            <h3 className="italic text-xs text-indigo-400">click here</h3>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         {
