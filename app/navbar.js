@@ -47,14 +47,15 @@ export default function NavBar() {
                         </div>
                     </div>
 
-                    <div className="w-1/6 md:w-fit ml-10 lg:w-1/6 border border-red-400 flex justify-center bg-yellow-600 rounded-md lg:px-3 lg:py-2">
+                    <Link
+                        href="events"
+                        className="w-1/6 md:w-fit ml-10 lg:w-1/6 border border-red-400 flex justify-center bg-yellow-600 rounded-md lg:px-3 lg:py-2"
+                    >
                         <div className="uppercase font-bold text-blue-700">
-                            <Link href="events" >
-                                <h2 className="md:hidden xl:block lg:text-sm xl:text-md">Upcoming Events</h2>
-                                <h2 className="lg:block xl:hidden text-md lg:text-lg">Events</h2>
-                            </Link>
+                            <h2 className="md:hidden xl:block lg:text-sm xl:text-md">Upcoming Events</h2>
+                            <h2 className="lg:block xl:hidden text-md lg:text-lg">Events</h2>
                         </div>
-                    </div>
+                    </Link>
 
 
                     <div className="w-1/6 hidden md:block">
