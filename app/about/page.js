@@ -1,8 +1,45 @@
+import Head from "next/head";
 import Image from "next/image";
+
+// JSON-LD structured data for About Us page
+const aboutUsJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    'name': 'About Us | Rewrite the Narrative Workshops',
+    'description': 'The purpose of the Rewrite the Narrative Workshops is to empower individuals to transform their lives by reshaping their personal narratives. These workshops help participants align their thoughts and words with their true aspirations, enabling them to understand how to fulfill their deepest desires. By exploring how to discover and follow God\'s Blueprint for their lives, participants can overcome their current circumstances and past experiences to reach their desired destination.',
+    'url': 'https://www.rewritethenarrative.com',
+    'mainEntity': {
+        '@type': 'Organization',
+        'name': 'Rewrite the Narrative',
+        'description': 'The purpose of the Rewrite the Narrative is to empower individuals to transform their lives by reshaping their personal narratives. Through workshops that aid in helping participants align their thoughts and words with their true aspirations.  We aim to enable participants with the understand of how to fulfill their deepest desires. By exploring how to discover and follow God\'s Blueprint for their lives, participants can overcome their current circumstances and past experiences to reach their desired destination.',
+        'foundingDate': '2023',
+        'founder': {
+            '@type': 'Person',
+            'name': 'Oleda Sinkler'
+        }
+    }
+};
+
+// SEO Metadata
+export const metadata = {
+    title: 'About Us | Rewrite the Narrative',
+    description: 'The purpose of the Rewrite the Narrative is to empower individuals to transform their lives by reshaping their personal narratives. Through workshops that aid in helping participants align their thoughts and words with their true aspirations.  We aim to enable participants with the understand of how to fulfill their deepest desires. By exploring how to discover and follow God\'s Blueprint for their lives, participants can overcome their current circumstances and past experiences to reach their desired destination.',
+    openGraph: {
+        title: 'About Us | Rewrite the Narrative',
+        description: 'The purpose of the Rewrite the Narrative is to empower individuals to transform their lives by reshaping their personal narratives. Through workshops that aid in helping participants align their thoughts and words with their true aspirations.  We aim to enable participants with the understand of how to fulfill their deepest desires. By exploring how to discover and follow God\'s Blueprint for their lives, participants can overcome their current circumstances and past experiences to reach their desired destination.',
+    },
+};
 
 export default function AboutPage() {
     return (
         <>
+            <Head>
+                {/* Injecting the JSON-LD structured data */}
+                <script type="application/ld+json">
+                    {JSON.stringify(aboutUsJsonLd)}
+                </script>
+            </Head>
+
             <section className="mt-1 mb-1 md:mt-5 md:mb-5 max-w-4xl mx-auto">
                 <div className="flex flex-col bg-slate-800 bg-opacity-70 lg:flex lg:shadow-lg lg:rounded-lg">
                     <div className="px-7 md:px-12 pt-12">
