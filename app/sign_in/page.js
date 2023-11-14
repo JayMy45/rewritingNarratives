@@ -1,5 +1,15 @@
 import ContactForm from "./form";
 
+export const metadata = {
+    title: 'Sign In | Contact Us - Rewrite the Narrative',
+    description: 'Access your account and get in touch with us at Rewrite the Narrative. Sign in to your account or contact us for support and inquiries.',
+    openGraph: {
+        title: 'Sign In and Contact - Rewrite the Narrative',
+        description: 'Securely sign in to your Rewrite the Narrative account or reach out to us for any support and queries.',
+    },
+};
+
+
 export default function siContactPage() {
 
     return (
