@@ -90,7 +90,7 @@ export default function NavBar() {
             </nav>
 
             {/* hamburger menu */}
-            <div className="flex border-b border-gray-400 dark:border-gray-950 md:border-none">
+            <div className="flex bg-gray-800 dark:bg-transparent border-b border-gray-400 dark:border-gray-950 md:border-none">
                 <Hamburger />
             </div>
         </>
