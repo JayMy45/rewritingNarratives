@@ -60,8 +60,8 @@ export default function ContactForm() {
 
     return (
         <>
-            <div className='flex justify-center'>
-                <form className="p-10 md:w-1/2 " onSubmit={handleSubmit}>
+            <div className='flex justify-center w-full'>
+                <form className="flex flex-col w-full md:w-3/4 " onSubmit={handleSubmit}>
                     {/* name */}
                     <div className="w-full flex flex-col my-auto">
                         <label className="font-semibold text-sm md:text-lg text-gray-200" htmlFor="name">Name</label>
