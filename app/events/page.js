@@ -56,7 +56,7 @@ export default function Events() {
             <section className="flex justify-center items-center min-h-full">
                 <div className="w-fit">
                     <div className={`h-full grid grid-cols-1 ${activeEventsCount > 1 ? 'md:grid-cols-2' : ''} gap-10 mx-auto m-5 mb-5 md:mt-12 md:mb-12`}>
-                        <div className="flex flex-col h-96 w-96 rounded-lg p-2 shadow-lg shadow-gray-500">
+                        {/* <div className="flex flex-col h-96 w-96 rounded-lg p-2 shadow-lg shadow-gray-500">
                             <div className="flex justify-between">
                                 <div>
                                     <Image
@@ -89,7 +89,7 @@ export default function Events() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         {
                             EventsData.map(({ location, date, time, link, image, active }) => {
@@ -103,7 +103,7 @@ export default function Events() {
 
                                 // Compare the eventDate with the currentDate
                                 // Display the event if the eventDate is the same or before the currentDate
-                                if (eventDate >= currentDate) {
+                                if (eventDate >= currentDate && active) {
                                     return (
                                         <div className="flex flex-col md:flex-row justify-center items-center w-fit rounded-md border border-yellow-700 overflow-hidden shadow-xl">
                                             <div className="hidden md:block">

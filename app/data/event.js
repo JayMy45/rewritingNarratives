@@ -40,5 +40,25 @@ export const EventsData = [
         image: "/Nov11.Columbia.png",
         active: false
     },
+    {
+        id: 5,
+        location: "6131 Riverdale Rd. Riverdale, GA",
+        date: "January 27, 2024",
+        time: "12:00pm - 2:00pm",
+        description: "Are you ready to gain valuable insights that can change your life? Our workshop will cover a wide range of topics, including effective thinking strategies, how to push beyond negative thinking, and building a strong productive mindset.",
+        link: "https://www.eventbrite.com/e/mind-your-business-workshop-tickets-780639593037?aff=oddtdtcreator",
+        image: "/January27.png",
+        active: true
+    },
+    {
+        id: 6,
+        location: "TBA",
+        date: "February 05, 2024",
+        time: "TBA",
+        description: "During this event, you will have the opportunity to learn from experienced prayer warriors who will share their wisdom and insights. Through interactive sessions and practical exercises, you will discover how to effectively communicate with the Almighty.",
+        link: "https://www.eventbrite.com/e/prayer-boot-camp-tickets-787246865567?aff=oddtdtcreator",
+        image: "/February5.png",
+        active: false
+    },
 
 ]
