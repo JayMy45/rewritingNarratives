@@ -23,14 +23,14 @@ export const teamMembers = [
         image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690603127/RewriteTheNarrative/Square%20Pics/Deborah_nzd3vb.png",
         title: "Member",
     },
+    // {
+    //     id: 5,
+    //     name: "Ka’LaShae",
+    //     image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690603612/RewriteTheNarrative/Square%20Pics/squarePicture_of_the_Team_fch8nk.png",
+    //     title: "Member",
+    // },
     {
         id: 5,
-        name: "Ka’LaShae",
-        image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690603612/RewriteTheNarrative/Square%20Pics/squarePicture_of_the_Team_fch8nk.png",
-        title: "Member",
-    },
-    {
-        id: 6,
         name: "Kimberly Dubose",
         image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690603126/RewriteTheNarrative/Square%20Pics/Kim_mahusw.png",
         title: "Member",
