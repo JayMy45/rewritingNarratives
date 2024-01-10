@@ -59,17 +59,17 @@ export const authorPage = [
         }
         ]
     },
-    {
-        id: 2,
-        name: "Ka’LaShae",
-        books: [{
-            id: 1,
-            title: "Anointed Prayers",
-            amazonLink: "https://www.amazon.com/dp/B0C7F76B6Y?ref_=cm_sw_r_apin_dp_MBQS5VKD48SDZV6J9C2G",
-            image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/AnointedPrayers_imkdyi.png",
-            active: true
-        }]
-    },
+    // {
+    //     id: 2,
+    //     name: "Ka’LaShae",
+    //     books: [{
+    //         id: 1,
+    //         title: "Anointed Prayers",
+    //         amazonLink: "https://www.amazon.com/dp/B0C7F76B6Y?ref_=cm_sw_r_apin_dp_MBQS5VKD48SDZV6J9C2G",
+    //         image: "https://res.cloudinary.com/dp04hh5pz/image/upload/v1690609480/RewriteTheNarrative/BookPicture/AnointedPrayers_imkdyi.png",
+    //         active: true
+    //     }]
+    // },
     {
         id: 3,
         name: "Dr. JaNeice Gilbert",
