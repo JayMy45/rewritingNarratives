@@ -78,7 +78,7 @@ export default function AboutPage() {
                     </p>
                     <div className="p-10 mb-4">
                         <a href="contact" className="p-2 border-2 rounded-md text-slate-100 hover:bg-blue-700">
-                            Inquire About a Workshop
+                            Inquire About a Workshops
                         </a>
                     </div>
                 </div>
