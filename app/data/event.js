@@ -60,5 +60,15 @@ export const EventsData = [
         image: "/February5.png",
         active: false
     },
+    {
+        id: 7,
+        location: "Online",
+        date: "February 05, 2024",
+        time: "Monday morning prayer @ 6:45am",
+        description: "Embark on a transformative journey with our 3-day Prayer Boot Camp, equipping you with essential tools and unwavering confidence in communicating with God. Explore the significance of prayer watches, amplify your ability to hear God's voice, and master the art of praying for yourself.",
+        link: "https://www.eventbrite.com/e/prayer-boot-camp-tickets-787246865567",
+        image: "/PBCamp.png",
+        active: true
+    },
 
 ]
