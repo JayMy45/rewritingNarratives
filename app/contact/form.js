@@ -1,7 +1,7 @@
 'use client'
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,6 +17,20 @@ export default function ContactForm() {
 
     // loading state for submit button
     const [loading, setLoading] = useState(false);
+
+    // set initial state of checkbox to include Mowing and Trimming
+    useEffect(() => {
+        const initialSet = new Set();
+        // for each service, if name is Mowing or Trimming, add id to initialSet
+        workshopData.forEach(({ id, name }) => {
+            if (name === "Rewrite the Narrative Workshop") {
+                initialSet.add(id);
+            }
+        });
+
+        setCheckedOptions(initialSet);
+    }, [resetCount]);
+
 
 
     // notify functions to display toast messages
