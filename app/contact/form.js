@@ -5,8 +5,15 @@ import React from 'react';
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { workshopData } from '../data/workshop';
 
 export default function ContactForm() {
+
+    // resetCount state to reset checkbox state
+    const [resetCount, setResetCount] = useState(0);
+
+    // checkbox state to track which services are selected
+    const [checkedOptions, setCheckedOptions] = useState(new Set())
 
     // loading state for submit button
     const [loading, setLoading] = useState(false);
@@ -29,6 +36,7 @@ export default function ContactForm() {
             name: event.target.name.value,
             email: event.target.email.value,
             message: event.target.message.value,
+            workshops: Array.from(checkedOptions)
         };
         console.log(data);
         const response = await fetch('/api/contact', {
@@ -45,6 +53,19 @@ export default function ContactForm() {
             event.target.name.value = '';
             event.target.email.value = '';
             event.target.message.value = '';
+
+            // display toast message when email is sent successfully
+            // notifySuccess();
+        }
+        if (response.ok) {
+            console.log('response worked');
+
+            // reset form
+            event.target.reset();
+            setCheckedOptions(new Set());
+
+            // After successful submission and form reset
+            setResetCount(prevCount => prevCount + 1);
 
             // display toast message when email is sent successfully
             notifySuccess();
@@ -103,6 +124,32 @@ export default function ContactForm() {
                             placeholder="Send me an email"
                         />
                     </div>
+                    <section className="mx-auto pl-16">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            {workshopData.map(({ id, name }) => (
+                                <div key={id} className="">
+                                    <input
+                                        onChange={(e) => {
+                                            const copy = new Set(checkedOptions);
+                                            if (copy.has(id)) {
+                                                copy.delete(id);
+                                            } else {
+                                                copy.add(id);
+                                            }
+                                            setCheckedOptions(copy);
+                                        }}
+                                        type="checkbox"
+                                        id={id}
+                                        name={name}
+                                        value={id}
+                                        checked={checkedOptions.has(id)} // Dynamically set the checked state based on whether id is in checkedOptions set
+                                    />
+                                    <label htmlFor={id} className="text-xs ml-1 capitalize" >{name}</label>
+                                </div>
+
+                            ))}
+                        </div>
+                    </section>
                     <div>
                         <button
                             disabled={loading}
