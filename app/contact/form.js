@@ -19,18 +19,19 @@ export default function ContactForm() {
     const [loading, setLoading] = useState(false);
 
     // set initial state of checkbox to include Mowing and Trimming
-    useEffect(() => {
-        const initialSet = new Set();
-        // for each service, if name is Mowing or Trimming, add id to initialSet
-        workshopData.forEach(({ id, name }) => {
-            if (name === "Rewrite the Narrative Workshop") {
-                initialSet.add(id);
-            }
-        });
-
-        setCheckedOptions(initialSet);
-    }, [resetCount]);
-
+    /* useEffect(() => {
+         const initialSet = new Set();
+         // for each service, if name is Mowing or Trimming, add id to initialSet
+         workshopData.forEach(({ id, name }) => {
+             if (name === "Rewrite the Narrative Workshop") {
+                 initialSet.add(id);
+             }
+         });
+ 
+         setCheckedOptions(initialSet);
+     }, [resetCount]);
+ 
+     */
 
 
     // notify functions to display toast messages
@@ -138,8 +139,9 @@ export default function ContactForm() {
                             placeholder="Send me an email"
                         />
                     </div>
-                    <section className="mx-auto pl-16">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <section className="p-5 w-fit">
+                        <h3 className="text-white text-md font-semibold">Select the workshop(s) you are interested in:</h3>
+                        <div className="grid grid-row-2 md:grid-row-4 gap-3 p-3 outline-dashed outline-2 rounded-md">
                             {workshopData.map(({ id, name }) => (
                                 <div key={id} className="">
                                     <input
@@ -164,7 +166,7 @@ export default function ContactForm() {
                             ))}
                         </div>
                     </section>
-                    <div>
+                    <div className='my-4'>
                         <button
                             disabled={loading}
                             className="bg-slate-500 px-2 py-2 w-24 rounded-lg font-medium hover:bg-blue-800 disabled:bg:gray-400 disabled:text-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
@@ -174,14 +176,14 @@ export default function ContactForm() {
 
                     </div>
                 </form>
-            </div>
+            </div >
             {/* toast container */}
-            <div className='z-11'>
+            < div className='z-11' >
                 <ToastContainer
                     position='bottom-center'
                     autoClose={2000}
                 />
-            </div>
+            </div >
         </>
     )
 }
