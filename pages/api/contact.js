@@ -1,12 +1,13 @@
 // load environment variables from .env file
 require('dotenv').config();
 
+import { workshopData } from "@/app/data/workshop";
 import nodemailer from "nodemailer";
 
 
 
 export default async function ContactAPI(req, res) {
-    const { name, email, message } = req.body;
+    const { name, email, message, workshops } = req.body;
 
     // check if all fields are provided
     if (!name || !email || !message) {
@@ -34,6 +35,15 @@ export default async function ContactAPI(req, res) {
 
     // try to send email (see nodemailer docs for more info)
     try {
+        // Map the workshop IDs to their names
+        const workshopNames = workshops.map(id => {
+            const workshop = workshopData.find(workshop => workshop.id === id);
+            return workshop ? workshop.name : undefined;
+        }).filter(Boolean); // this filter removes undefined values
+
+        // Create a string of workshop names separated by commas
+        const workshopsString = workshopNames.join(", ");
+
         const mail = await transporter.sendMail({
             from: user,
             to: "rewritethenarrativenow@gmail.com",
@@ -43,6 +53,7 @@ export default async function ContactAPI(req, res) {
             <p>Name: ${name}</p>
             <p>Email: ${email}</p>
             <p>Message: ${message}</p>
+            <p><strong>Workshops Interested In</strong>: ${workshopsString}</p>  <!-- Include the workshops here -->
             `,
         });
 
