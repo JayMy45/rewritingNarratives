@@ -70,5 +70,24 @@ export const EventsData = [
         image: "/PBCamp.png",
         active: true
     },
-
+    {
+        id: 8,
+        location: "Online",
+        date: "April 1, 2024",
+        time: "Monday April 1, 12:00am - Wednesday April 3, 9:00pm",
+        description: "Embark on a transformative journey with our 3-day Prayer Boot Camp, equipping you with essential tools and unwavering confidence in communicating with God. Explore the significance of prayer watches, amplify your ability to hear God's voice, and master the art of praying for yourself.",
+        link: "https://www.eventbrite.com/e/prayer-boot-camp-tickets-859908608797?aff=oddtdtcreator",
+        image: "/PBCamp.0424.jpeg",
+        active: true
+    },
+    {
+        id: 9,
+        location: "2201 Opitz BIvd\nWoodbridge VA 22191",
+        date: "June 8, 2024",
+        time: "Saturday, June 8, 2024\n1:00PM - 3:00PM",
+        description: "Embark on a transformative journey with our 3-day Prayer Boot Camp, equipping you with essential tools and unwavering confidence in communicating with God. Explore the significance of prayer watches, amplify your ability to hear God's voice, and master the art of praying for yourself. Do you find yourself constantly worrying about other people's opinions of you? Are you a people-pleaser, or do you struggle to tell the difference? It's time to BREAK FREE from inhibiting thoughts and join us to discover the keys to minding your business and achieving success, God's way!",
+        link: "https://www.eventbrite.com/e/prayer-boot-camp-tickets-787246865567",
+        image: "/RWTN.06122024.png",
+        active: true
+    },
 ]
